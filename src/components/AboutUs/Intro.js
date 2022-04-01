@@ -8,15 +8,18 @@ function Intro() {
                     <p className={styles.title}>About Us</p>
                     <p className={styles.description}>
                       <span>
-                        The about us page is commonly used by all types of businesses to give customers more insight into who is involved with a given business and exactly what it does.
-                        The about us page is often a reflection of the purpose and personality of the business and its owners or top employees.
+                        The Icon အဖွဲ့ကို ဒီဇင်ဘာလ 4 ရက် 2017 ခုနှစ်တွင်စတင်ဖွဲ့စည်းခဲ့ပါသည်။
+                        ဓာတ်ပုံဖြင့်အသက်မွေးကြသောသူများနှင့် အကူအညီလိုအပ်နေသူများအား 
+                        အကူအညီပေးနိုင်ရန် ရည်ရွယ်၍ဖွဲ့စည်းခဲ့ပါသည်။ ဓာတ်ပုံပညာအား 
+                        သင်ပြပေးခြင်း ၊ ပြပွဲများဖြစ်မြောက်စေရန် ပြင်ဆင်နေခြင်းများကို 
+                        လုပ်ဆောင်နေပါသည်။
                       </span>
                     </p>
                     
                 </div>
 
                 <div>
-                    {<img src="/images/blogimage1.jpg" alt="blog image" className={styles.img} />}
+                    {<img src="/images/aboutusimage.jpg" alt="blog image" className={styles.img} />}
                 </div>
 
                

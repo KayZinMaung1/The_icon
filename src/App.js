@@ -9,7 +9,6 @@ import GalleryPage from './pages/GalleryPage';
 import ContactUs from './pages/ContactUs';
 import BlogsPage from './pages/BlogsPage';
 
-
 function App() {
   return (
     <Router>

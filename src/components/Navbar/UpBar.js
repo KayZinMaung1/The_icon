@@ -10,7 +10,7 @@ const UpBar = () => {
             <div className={styles.subcontainer1}>
                 <div className={styles.componentcontainer}>
                     <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
-                    <div className={styles.text}>secondtaproot@gmail.com</div>
+                    <div className={styles.text}>theicon@gmail.com</div>
                 </div>
                 <div className={styles.sperator}> | </div>
                 <div className={styles.componentcontainer}>

@@ -6,8 +6,7 @@ const Cover = () => {
       <img src="/images/coverphoto.jpg" alt="coverphoto" className={styles.coverphoto} />
       <div className={styles.subcontainer}>
         <img src="/images/logo.jpg" alt="logo" className={styles.logo} />
-        <p className={styles.covertext}> ဒုတိယရေသောက်မြစ်</p>
-        <p className={styles.subcovertext}>လူမှုကူညီရေးအဖွဲ့(မန္တလေး) </p>
+        <p className={styles.covertext}>The Icon</p>
       </div>
     </div>
   );

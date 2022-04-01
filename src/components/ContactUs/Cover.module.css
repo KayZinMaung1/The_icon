@@ -9,7 +9,6 @@
     position: relative;
    }
   .coverphoto{
-    filter: brightness(50%);
     width:100%;
     height: 450px;
 }

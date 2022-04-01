@@ -3,7 +3,6 @@ import Cover from '../components/Home/Cover'
 import FeaturedBlogs from '../components/Home/FeaturedBlogs';
 import Motto from '../components/Home/Motto';
 import FeaturedGallery from '../components/Home/FeaturedGallery';
-import VisionMissionGoal from '../components/Home/VisionMissionGoal';
 import FeaturedVideo from '../components/Home/FeaturedVideo';
 import { getFeaturedBlogs, getFeaturedGalleries, getFeaturedVideos } from "../data/data";
 
@@ -25,7 +24,6 @@ const Home = () => {
             <FeaturedBlogs featuredblogs={featuredblogs}/>
             <FeaturedGallery featuredgalleries={featuredgalleries}/>
             <FeaturedVideo  featuredvideos={featuredvideos}/>
-            <VisionMissionGoal/>
         </Fragment >
      );
 }

@@ -10,8 +10,8 @@
   
   .img {
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: auto;
   }
   
   .textcontainer {
