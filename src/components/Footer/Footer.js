@@ -12,7 +12,7 @@ const Footer = () => {
     return ( 
         <footer className={styles.footer}>
             <div className={styles.subcontainer}>
-                <a href="https://www.facebook.com/Second-Tap-Root-447073468698841/" target="_blank">
+                <a href="https://www.facebook.com/Towards-A-Better-Peace-103755628814730/" target="_blank">
                     <div className={styles.icon}><i className="fa-brands fa-facebook"></i></div>
                 </a>
             </div>

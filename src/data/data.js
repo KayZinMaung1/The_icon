@@ -18,14 +18,14 @@ const BLOGS = [
       title: 'ဓါတ်ပုံဝါသနာရှင်များအတွက် Photo Contact ဖိတ်ခေါ်ခြင်း',
       postingdate:  '22/02/2022',
       description: 'The Icon မှကျင်းပပြုလုပ်မည့် Photo Contact တွင် မန်းလေးမြို့ရှိ ဓါတ်ပုံဝါသနာရှင်များအား ပါဝင်ယှဉ်ပြိုင်နိုင်ကြောင်းဖိတ်ခေါ်အပ်ပါသည်။ ယဉ်ကျေးမှု ၊ ဘာသာရေး ၊ အတူယှဉ်တွဲနေထိုင်မှု ၊ တဦးနှင့်တဦး ကူညီရိုင်းပင်းမှုများကို ဖော်ပြနိုင်သည့် " ဓာတ်ပုံများကို ပြိုင်ပွဲပြလုပ်သွားမည်ဖြစ်ပါသည်။ ဆုရွေးချယ်‌၍ပေးသွားမည်ဖြစ်ပါသည်။ ထိုသို့တင်ပြရာတွင် ဓာတ်ပုံ၏ နောက်မှပုံ၏ ဆိုလိုရင်းကို Story Telling ပုံစံဖြင့်တင်ပြပေးမည်ဖြစ်ပါသည်။',
-      image:`${window.location.origin}/images/blogimage3.jpg`
+      image:`${window.location.origin}/images/blogimage1.jpg`
     },
     {
       id: 4,
       title: 'ဓါတ်ပုံဝါသနာရှင်များအတွက် Photo Contact ဖိတ်ခေါ်ခြင်း',
       postingdate:  '22/02/2022',
       description: 'The Icon မှကျင်းပပြုလုပ်မည့် Photo Contact တွင် မန်းလေးမြို့ရှိ ဓါတ်ပုံဝါသနာရှင်များအား ပါဝင်ယှဉ်ပြိုင်နိုင်ကြောင်းဖိတ်ခေါ်အပ်ပါသည်။ ယဉ်ကျေးမှု ၊ ဘာသာရေး ၊ အတူယှဉ်တွဲနေထိုင်မှု ၊ တဦးနှင့်တဦး ကူညီရိုင်းပင်းမှုများကို ဖော်ပြနိုင်သည့် " ဓာတ်ပုံများကို ပြိုင်ပွဲပြလုပ်သွားမည်ဖြစ်ပါသည်။ ဆုရွေးချယ်‌၍ပေးသွားမည်ဖြစ်ပါသည်။ ထိုသို့တင်ပြရာတွင် ဓာတ်ပုံ၏ နောက်မှပုံ၏ ဆိုလိုရင်းကို Story Telling ပုံစံဖြင့်တင်ပြပေးမည်ဖြစ်ပါသည်။',
-      image:`${window.location.origin}/images/blogimage4.jpg`
+      image:`${window.location.origin}/images/blogimage2.jpg`
     },   
     {
       id: 5,
@@ -52,7 +52,7 @@ const BLOGS = [
   }
 
   export function getBlog(id) {
-    return BLOGS.find(BLOG => BLOG.id == id);
+    return BLOGS.find(BLOG => BLOG.id === parseInt(id));
   }
   export function getRelatedBlogs() {
     var IDs = [];
@@ -85,17 +85,17 @@ const BLOGS = [
     },
     {
       id: 4,
-      image:  `${window.location.origin}/images/featuredphoto1.jpg`,
+      image:  `${window.location.origin}/images/featuredphoto4.jpg`,
       description: "Featured Photo 4",
     },
     {
       id: 5,
-      image:  `${window.location.origin}/images/featuredphoto2.jpg`,
+      image:  `${window.location.origin}/images/featuredphoto1.jpg`,
       description: "Featured Photo 5",
     },
     {
       id: 6,
-      image:  `${window.location.origin}/images/featuredphoto3.jpg`,
+      image:  `${window.location.origin}/images/featuredphoto2.jpg`,
       description: "Featured Photo 6",
     },
   ];
@@ -106,6 +106,30 @@ const BLOGS = [
   export function getFeaturedGalleries() {
     return GALLERIES.filter(GALLERY => GALLERY.id < 5 )
   }
+
+  const MAIN_GALLERIES = [
+    {
+      id: 1,
+      image:  `${window.location.origin}/images/mainimage1.jpg`,
+      description: "Main Photo 1",
+    },
+    {
+      id: 2,
+      image:  `${window.location.origin}/images/mainimage2.jpg`,
+      description: "Main Photo 2",
+    },
+    {
+      id: 3,
+      image:  `${window.location.origin}/images/mainimage3.jpg`,
+      description: "Main Photo 3",
+    },
+
+
+  ];
+  export function getMainGalleries() {
+    return MAIN_GALLERIES;
+  }
+ 
 
   const VIDEOS = [
     {

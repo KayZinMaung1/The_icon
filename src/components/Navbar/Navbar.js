@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from './Navbar.module.css';
-import { Link } from "react-router-dom";
+import { NavLink , Link} from "react-router-dom";
 import UpBar from "./UpBar";
 
 
@@ -15,17 +15,14 @@ const Navbar = () => {
         <div className={styles.container}>
             <UpBar/>
             <nav className={styles.navbar}>
-                <Link to="/" className={styles.navtitle}>
+                <NavLink to="/" className={styles.navtitle}>
                     <img
                         src='/images/logo.jpg'
-                        alt="Second Tap Root"
+                        alt="The Icon"
                         className={styles.navlogo}
                     />
-                    <p>
-                        Second Tap Root <br />
-                        ဒုတိယရေသောက်မြစ်
-                    </p>
-                </Link>
+                    <p> The Icon </p>
+                </NavLink>
                 <div className={styles.menuicon} onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
@@ -35,29 +32,29 @@ const Navbar = () => {
                     }
                 >
                     <li className={styles.navitem}>
-                        <Link to="/" className={styles.navlinks} onClick={closeMobileMenu}>
+                        <NavLink to="/"  onClick={closeMobileMenu}  className={({ isActive }) => (isActive ? [styles.navlinks, styles.active].join(" "): styles.navlinks)}>
                             Home
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className={styles.navitem}>
-                        <Link to="/aboutus" className={styles.navlinks} onClick={closeMobileMenu}>
+                       <NavLink to="/aboutus"  onClick={closeMobileMenu}  className={({ isActive }) => (isActive ? [styles.navlinks, styles.active].join(" ") : styles.navlinks)}>
                             About Us
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className={styles.navitem}>
-                        <Link to="/blogs" className={styles.navlinks} onClick={closeMobileMenu}>
+                        <NavLink to="/blogs"  onClick={closeMobileMenu}  className={({ isActive }) => (isActive ? [styles.navlinks, styles.active].join(" ") : styles.navlinks)}>
                             Blogs
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className={styles.navitem}>
-                        <Link to="/gallery" className={styles.navlinks} onClick={closeMobileMenu}>
+                        <NavLink to="/gallery"  onClick={closeMobileMenu}  className={({ isActive }) => (isActive ? [styles.navlinks, styles.active].join(" ") : styles.navlinks)}>
                             Gallery
-                        </Link>
+                        </NavLink>
                     </li>
                     <li className={styles.navitem}>
-                        <Link to="/contactus" className={styles.navlinks} onClick={closeMobileMenu}>
+                        <NavLink to="/contactus"  onClick={closeMobileMenu}  className={({ isActive }) => (isActive ? [styles.navlinks, styles.active].join(" ") : styles.navlinks)}>
                             Contact Us
-                        </Link>
+                        </NavLink>
                     </li>
                 </ul>
             </nav>

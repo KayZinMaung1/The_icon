@@ -19,7 +19,8 @@
 .rec.rec-arrow.rec.rec-arrow-right:hover,
 .rec.rec-arrow.rec.rec-arrow-left:focus,
 .rec.rec-arrow.rec.rec-arrow-right:focus {
-  background-color: #1F3E07;
+  background-color: #014984;
+  ;
 }
 
 .rec.rec-arrow:disabled {
@@ -27,7 +28,7 @@
 }
 
 .rec.rec-dot {
-  border: 2px #1F3E07 solid;
+  border: 2px #014984 solid;
   box-shadow: none;
 }
 
@@ -37,7 +38,7 @@
 }
 
 .rec.rec-dot_active {
-  background-color: #1F3E07;
+  background-color: #014984;
   box-shadow: none;
 }
 

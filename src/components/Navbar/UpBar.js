@@ -19,7 +19,7 @@ const UpBar = () => {
                 </div>
             </div>
             <div className={styles.subcontainer2}>
-                <a href="https://www.facebook.com/Second-Tap-Root-447073468698841/" target="_blank">
+                <a href="https://www.facebook.com/Towards-A-Better-Peace-103755628814730/" target="_blank">
                     <FontAwesomeIcon icon={faFacebookSquare} className={styles.brandicon} />
                 </a>
             </div>

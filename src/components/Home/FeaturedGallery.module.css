@@ -1,34 +1,51 @@
-.container {
-    width: 1200px;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1px;
-    padding: 1rem;
-  }
-  
-  .title{
-    font-size: x-large;
-    font-weight: bold;
-    padding:10px 0;
-  }
-  .photo{
-    width:100%;
-    height: auto;
-    padding: 10px 30px;
-  }
-  @media screen and (max-width: 1200px) {
-    .container {
-      width: 100%;
-    }
 
+.container {
+  width: 1200px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 1rem;
+}
+
+.photo{
+  width:500px;
+  height: 330px;
+  padding: 3rem;
+}
+
+.title{
+  font-size: x-large;
+  font-weight: bold;
+  padding:10px 0;
+}
+
+@media screen and (max-width: 820px) { 
+  .photo{
+    width: 400px;
+    height: auto;
   }
-  @media screen and (max-width: 820px) {
-    .title{
-      font-size: large;
-    }
-    
+  .title{
+    font-size: large;
   }
-  
+}
+@media screen and (max-width: 420px) { 
+  .photo{
+    width: 100%;
+  }
+}
+
+
+
